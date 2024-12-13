@@ -1,12 +1,12 @@
 
-def permute(key, list_maps):
+def permute(bits, list_maps):
     """
     Remapeia os index da minha chave.
     
     Ex:
 
     """
-    return ''.join(key[i] for i in list_maps)
+    return ''.join(bits[i] for i in list_maps)
     
 def left_shift(bits, N=1):
     """
@@ -50,6 +50,6 @@ def generate_keys(key):
 
 
 if __name__ == '__main__':
-    key = '1010101000'
+    key = '1010000010'
     key_1, key_2 = generate_keys(key)
 
