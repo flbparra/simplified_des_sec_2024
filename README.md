@@ -7,6 +7,6 @@ Trabalho de cifrangem simples (segurança computacional), usando S-DES, uma form
 
 - Gerar chaves - OK 
 - Fazer permutação inicial do bloco de dados - OK
-- Entrar nas rodas de feiste
-- Modular operador princial 
-- Visualização de resultados
+- Entrar nas rodas de feiste Ok
+- Modular operador princial Ok
+- Visualização de resultados OK
