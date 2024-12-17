@@ -5,8 +5,10 @@ Trabalho de cifrangem simples (segurança computacional), usando S-DES, uma form
 -----
 ### Fases:
 
-- Gerar chaves - OK 
-- Fazer permutação inicial do bloco de dados - OK
-- Entrar nas rodas de feiste Ok
-- Modular operador princial Ok
-- Visualização de resultados OK
+- Gerar chaves - Parra/211020956
+- Fazer permutação inicial do bloco de dados Parra/211020956
+- Entrar nas rodas de feiste - Parra/211020956
+- Modular operador princial - Pedro
+- Visualização de resultados - Pedro
+- Documento - Pedro
+
