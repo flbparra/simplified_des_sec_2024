@@ -65,13 +65,6 @@ def rodada_feistel(esquerda, direita, chave):
     nova_esquerda = xor(esquerda, saida_F)
     return direita, nova_esquerda
 
-esquerda, direita = IP_dados[:4], IP_dados[4:]
-esquerda, direita = rodada_feistel(esquerda, direita, K1)
-esquerda, direita = rodada_feistel(esquerda, direita, K2)
-print("Saída após rodadas de Feistel:", esquerda + direita)
-
-
-
 def permutacao(bits, tabela):
     return [bits[i - 1] for i in tabela]
 
@@ -86,9 +79,11 @@ def aplicar_sbox(bits, sbox):
     coluna = int(f"{bits[1]}{bits[2]}", 2)
     return [int(x) for x in f"{sbox[linha][coluna]:02b}"]
 
+esquerda, direita = IP_dados[:4], IP_dados[4:]
+esquerda, direita = rodada_feistel(esquerda, direita, K1)
+esquerda, direita = rodada_feistel(esquerda, direita, K2)
 
-
-
+print("Saída após rodadas de Feistel:", esquerda + direita)
 
 print("\n### Resultados Finais ###")
 print(f"Chave Inicial (10 bits): {chave_10}")
